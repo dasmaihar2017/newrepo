@@ -43,19 +43,18 @@ pipeline {
             steps {
                 echo 'Deploy on prod'
             }
-        }
-        /* post { 
+        } 
+    }
+    post { 
             always { 
                  echo 'I will always say Hello again!'
             }
-              Failur { 
+              failure { 
                   echo 'Failure!'
                 }
               success { 
                   echo 'Success!'
             }
-        } */
-        
-    }
+        } 
 }
 
